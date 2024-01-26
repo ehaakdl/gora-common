@@ -1,3 +1,5 @@
+#### protobuf version 2
+
 #### java 컴파일
 ```
 protoc -I=./protobuf --java_out=./protobuf/out ./protobuf/*.proto
