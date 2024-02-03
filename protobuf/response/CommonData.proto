@@ -1,9 +1,9 @@
 package protobuf;
 
 option java_package = "org.gora.server.model.network.protobuf";
-option java_outer_classname = "ChatSendDataProtoBuf";
+option java_outer_classname = "CommonDataProtoBuf";
 
-message ChatSendData {
+message CommonData {
   optional string accessToken = 1;
-  required bytes data = 4;
-} 
+  required string status = 2;
+}

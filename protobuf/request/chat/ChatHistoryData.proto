@@ -11,5 +11,5 @@ message ChatHistoryData {
   optional Timestamp endAt = 5;
   required fixed32 page = 6;
   required fixed32 pageSize = 7;
-  optional string accessToken = 8;
+  required string accessToken = 8;
 }

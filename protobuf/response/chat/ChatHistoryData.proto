@@ -5,10 +5,10 @@ option java_outer_classname = "ChatHistoryDataProtobuf";
 
 message MessageData {
   required string chatType = 1;
-  optional string groupType = 2;
-  optional string groupCode = 3;
-  optional string sender = 4;
-  optional string receive = 5;
+  optional string senderGroupType = 2;
+  optional string senderGroupCode = 3;
+  optional string senderEmail = 4;
+  optional string receiveEmail = 5;
   required Timestamp sentAt = 6;
   required string message = 7;
 }
@@ -18,4 +18,5 @@ message ChatHistoryData {
   required fixed32 pageSize = 2;
   required bytes data = 3;
   required fixed32 totalPage = 4;
+  optional string accessToken = 5;
 }
