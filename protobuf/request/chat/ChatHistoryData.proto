@@ -1,0 +1,15 @@
+package protobuf;
+
+option java_package = "org.gora.server.model.network.protobuf";
+option java_outer_classname = "ChatHistoryDataProtobuf";
+
+message ChatHistoryData {
+  required string chatType = 1;
+  optional string groupType = 2;
+  optional string groupCode = 3;
+  optional Timestamp startAt = 4;
+  optional Timestamp endAt = 5;
+  required fixed32 page = 6;
+  required fixed32 pageSize = 7;
+  optional string accessToken = 8;
+}
