@@ -7,6 +7,8 @@
 ```
 java, c# 독립적으로 직렬화 하기 위해서 도입됨
 ```
+<details>
+<summary><h4>컴파일 방법</h4></summary>
 
 #### java 컴파일
 ```
@@ -28,11 +30,11 @@ protoc -I=./protobuf --csharp_out=./protobuf/out/c ./protobuf/response/chat/*.pr
 
 #### 컴파일 결과물
 - <img width="197" alt="image" src="https://github.com/ehaakdl/gora-common/assets/6407466/df025318-00c5-4a38-b572-148ac8e43ac6">
-
+</details>
 
 <details>
 <summary>
-    <h4>Protobuf 스펙 정리</h4>
+    <h4>모델링 스펙 정리</h4>
 </summary>
 
 ## ChatHistoryRequest(채팅 내역 조회 요청)
