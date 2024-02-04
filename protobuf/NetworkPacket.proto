@@ -1,0 +1,14 @@
+package protobuf;
+
+option java_package = "org.gora.server.model.network.protobuf";
+option java_outer_classname = "NetworkPacketProtoBuf";
+
+message NetworkPacket {
+  required bytes data = 1; // 데이터가 담김
+  required fixed32 type = 2; // 패킷에 담긴 데이터 유형
+  required fixed32 dataSize = 3; // 패딩을 제외한 실제 데이터 사이즈
+  required string udpChannelId = 4; // udp 로 전송된 사용자가 누구인지 식별하기 위한 필드
+  required string identify = 5; // 패킷에 식별자
+  required fixed32 totalSize = 6; // 분할 패킷인 경우 합쳤을때 사이즈
+  required fixed32 sequence = 7; // 분할 패킷인 경우 순서를 식별하기 위한 필드
+}

@@ -1,0 +1,9 @@
+package protobuf;
+
+option java_package = "org.gora.server.model.network.protobuf";
+option java_outer_classname = "GenericResponseProtobuf";
+
+message GenericResponse {
+  required uint32 status = 1; // 요청에 대한 결과 코드
+  optional string accessToken = 2; // 계정 인증 토큰(재발급될때 이 필드가 채워짐)
+}

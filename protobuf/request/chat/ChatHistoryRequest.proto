@@ -1,0 +1,16 @@
+package protobuf;
+
+option java_package = "org.gora.server.model.network.protobuf";
+option java_outer_classname = "ChatHistoryRequestProtobuf";
+
+message ChatHistoryRequest {
+  required string chatType = 1; // 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
+  optional string groupType = 2; // 어떤 그룹 유형 인지 나타낸다(미사용 - 나중에 구현 예정)
+  optional string groupCode = 3; // 어떤 그룹 인지 나타낸다(미사용 - 나중에 구현 예정)
+  optional string userCode = 4; // 어떤 유저에 데이터를 가져올지 지정한다.(1:1 채팅에서 사용, 미사용 - 나중에 구현 예정)
+  optional uint64 startAt = 5; // 조회 시작 범위 >
+  optional uint64 endAt = 6; // 조회 끝 범위 <
+  required uint32 page = 7; // 조회할 페이지 번호
+  required uint32 pageSize = 8; // 조회할 페이지 사이즈
+  required string accessToken = 9; // 계정 인증토큰
+}
