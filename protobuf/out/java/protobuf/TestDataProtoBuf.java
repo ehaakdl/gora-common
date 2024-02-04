@@ -2,7 +2,7 @@
 // source: response/TestData.proto
 
 // Protobuf Java Version: 3.25.0-rc2
-package org.gora.server.model.network.protobuf;
+package protobuf;
 
 public final class TestDataProtoBuf {
   private TestDataProtoBuf() {}
@@ -55,15 +55,15 @@ public final class TestDataProtoBuf {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.gora.server.model.network.protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_descriptor;
+      return protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.gora.server.model.network.protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_fieldAccessorTable
+      return protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.class, org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.Builder.class);
+              protobuf.TestDataProtoBuf.TestData.class, protobuf.TestDataProtoBuf.TestData.Builder.class);
     }
 
     private int bitField0_;
@@ -126,10 +126,10 @@ public final class TestDataProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData)) {
+      if (!(obj instanceof protobuf.TestDataProtoBuf.TestData)) {
         return super.equals(obj);
       }
-      org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData other = (org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData) obj;
+      protobuf.TestDataProtoBuf.TestData other = (protobuf.TestDataProtoBuf.TestData) obj;
 
       if (hasMsg() != other.hasMsg()) return false;
       if (hasMsg()) {
@@ -156,44 +156,44 @@ public final class TestDataProtoBuf {
       return hash;
     }
 
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(byte[] data)
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(java.io.InputStream input)
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -201,26 +201,26 @@ public final class TestDataProtoBuf {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseDelimitedFrom(java.io.InputStream input)
+    public static protobuf.TestDataProtoBuf.TestData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseDelimitedFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData parseFrom(
+    public static protobuf.TestDataProtoBuf.TestData parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -233,7 +233,7 @@ public final class TestDataProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData prototype) {
+    public static Builder newBuilder(protobuf.TestDataProtoBuf.TestData prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -254,21 +254,21 @@ public final class TestDataProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:protobuf.TestData)
-        org.gora.server.model.network.protobuf.TestDataProtoBuf.TestDataOrBuilder {
+        protobuf.TestDataProtoBuf.TestDataOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.gora.server.model.network.protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_descriptor;
+        return protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.gora.server.model.network.protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_fieldAccessorTable
+        return protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.class, org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.Builder.class);
+                protobuf.TestDataProtoBuf.TestData.class, protobuf.TestDataProtoBuf.TestData.Builder.class);
       }
 
-      // Construct using org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.newBuilder()
+      // Construct using protobuf.TestDataProtoBuf.TestData.newBuilder()
       private Builder() {
 
       }
@@ -289,17 +289,17 @@ public final class TestDataProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.gora.server.model.network.protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_descriptor;
+        return protobuf.TestDataProtoBuf.internal_static_protobuf_TestData_descriptor;
       }
 
       @java.lang.Override
-      public org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData getDefaultInstanceForType() {
-        return org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.getDefaultInstance();
+      public protobuf.TestDataProtoBuf.TestData getDefaultInstanceForType() {
+        return protobuf.TestDataProtoBuf.TestData.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData build() {
-        org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData result = buildPartial();
+      public protobuf.TestDataProtoBuf.TestData build() {
+        protobuf.TestDataProtoBuf.TestData result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -307,14 +307,14 @@ public final class TestDataProtoBuf {
       }
 
       @java.lang.Override
-      public org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData buildPartial() {
-        org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData result = new org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData(this);
+      public protobuf.TestDataProtoBuf.TestData buildPartial() {
+        protobuf.TestDataProtoBuf.TestData result = new protobuf.TestDataProtoBuf.TestData(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData result) {
+      private void buildPartial0(protobuf.TestDataProtoBuf.TestData result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -358,16 +358,16 @@ public final class TestDataProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData) {
-          return mergeFrom((org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData)other);
+        if (other instanceof protobuf.TestDataProtoBuf.TestData) {
+          return mergeFrom((protobuf.TestDataProtoBuf.TestData)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData other) {
-        if (other == org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData.getDefaultInstance()) return this;
+      public Builder mergeFrom(protobuf.TestDataProtoBuf.TestData other) {
+        if (other == protobuf.TestDataProtoBuf.TestData.getDefaultInstance()) return this;
         if (other.hasMsg()) {
           setMsg(other.getMsg());
         }
@@ -475,12 +475,12 @@ public final class TestDataProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:protobuf.TestData)
-    private static final org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData DEFAULT_INSTANCE;
+    private static final protobuf.TestDataProtoBuf.TestData DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData();
+      DEFAULT_INSTANCE = new protobuf.TestDataProtoBuf.TestData();
     }
 
-    public static org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData getDefaultInstance() {
+    public static protobuf.TestDataProtoBuf.TestData getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -516,7 +516,7 @@ public final class TestDataProtoBuf {
     }
 
     @java.lang.Override
-    public org.gora.server.model.network.protobuf.TestDataProtoBuf.TestData getDefaultInstanceForType() {
+    public protobuf.TestDataProtoBuf.TestData getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -537,8 +537,7 @@ public final class TestDataProtoBuf {
   static {
     java.lang.String[] descriptorData = {
       "\n\027response/TestData.proto\022\010protobuf\"\027\n\010T" +
-      "estData\022\013\n\003msg\030\001 \001(\014B:\n&org.gora.server." +
-      "model.network.protobufB\020TestDataProtoBuf"
+      "estData\022\013\n\003msg\030\001 \001(\014B\022B\020TestDataProtoBuf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

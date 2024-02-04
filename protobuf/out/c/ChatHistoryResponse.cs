@@ -31,9 +31,8 @@ namespace Protobuf {
             "bWFpbBgGIAEoCRIXCg9yZWNlaXZlVXNlckNvZGUYByABKAkSDgoGc2VudEF0",
             "GAggAigEEg8KB21lc3NhZ2UYCSACKAkiawoTQ2hhdEhpc3RvcnlSZXNwb25z",
             "ZRIMCgRwYWdlGAEgAigNEhAKCHBhZ2VTaXplGAIgAigNEgwKBGRhdGEYAyAC",
-            "KAwSEQoJdG90YWxQYWdlGAQgAigNEhMKC2FjY2Vzc1Rva2VuGAUgASgJQkUK",
-            "Jm9yZy5nb3JhLnNlcnZlci5tb2RlbC5uZXR3b3JrLnByb3RvYnVmQhtDaGF0",
-            "SGlzdG9yeVJlc3BvbnNlUHJvdG9idWY="));
+            "KAwSEQoJdG90YWxQYWdlGAQgAigNEhMKC2FjY2Vzc1Rva2VuGAUgASgJQh1C",
+            "G0NoYXRIaXN0b3J5UmVzcG9uc2VQcm90b2J1Zg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

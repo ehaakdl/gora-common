@@ -26,8 +26,7 @@ namespace Protobuf {
           string.Concat(
             "Ch5yZXNwb25zZS9HZW5lcmljUmVzcG9uc2UucHJvdG8SCHByb3RvYnVmIjYK",
             "D0dlbmVyaWNSZXNwb25zZRIOCgZzdGF0dXMYASACKA0SEwoLYWNjZXNzVG9r",
-            "ZW4YAiABKAlCQQomb3JnLmdvcmEuc2VydmVyLm1vZGVsLm5ldHdvcmsucHJv",
-            "dG9idWZCF0dlbmVyaWNSZXNwb25zZVByb3RvYnVm"));
+            "ZW4YAiABKAlCGUIXR2VuZXJpY1Jlc3BvbnNlUHJvdG9idWY="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

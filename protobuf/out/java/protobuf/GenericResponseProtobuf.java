@@ -2,7 +2,7 @@
 // source: response/GenericResponse.proto
 
 // Protobuf Java Version: 3.25.0-rc2
-package org.gora.server.model.network.protobuf;
+package protobuf;
 
 public final class GenericResponseProtobuf {
   private GenericResponseProtobuf() {}
@@ -92,15 +92,15 @@ public final class GenericResponseProtobuf {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.gora.server.model.network.protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_descriptor;
+      return protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.gora.server.model.network.protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_fieldAccessorTable
+      return protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.class, org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.Builder.class);
+              protobuf.GenericResponseProtobuf.GenericResponse.class, protobuf.GenericResponseProtobuf.GenericResponse.Builder.class);
     }
 
     private int bitField0_;
@@ -242,10 +242,10 @@ public final class GenericResponseProtobuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse)) {
+      if (!(obj instanceof protobuf.GenericResponseProtobuf.GenericResponse)) {
         return super.equals(obj);
       }
-      org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse other = (org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse) obj;
+      protobuf.GenericResponseProtobuf.GenericResponse other = (protobuf.GenericResponseProtobuf.GenericResponse) obj;
 
       if (hasStatus() != other.hasStatus()) return false;
       if (hasStatus()) {
@@ -281,44 +281,44 @@ public final class GenericResponseProtobuf {
       return hash;
     }
 
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(byte[] data)
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(java.io.InputStream input)
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -326,26 +326,26 @@ public final class GenericResponseProtobuf {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseDelimitedFrom(java.io.InputStream input)
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseDelimitedFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
+    public static protobuf.GenericResponseProtobuf.GenericResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -358,7 +358,7 @@ public final class GenericResponseProtobuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse prototype) {
+    public static Builder newBuilder(protobuf.GenericResponseProtobuf.GenericResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -379,21 +379,21 @@ public final class GenericResponseProtobuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:protobuf.GenericResponse)
-        org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponseOrBuilder {
+        protobuf.GenericResponseProtobuf.GenericResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.gora.server.model.network.protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_descriptor;
+        return protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.gora.server.model.network.protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_fieldAccessorTable
+        return protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.class, org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.Builder.class);
+                protobuf.GenericResponseProtobuf.GenericResponse.class, protobuf.GenericResponseProtobuf.GenericResponse.Builder.class);
       }
 
-      // Construct using org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.newBuilder()
+      // Construct using protobuf.GenericResponseProtobuf.GenericResponse.newBuilder()
       private Builder() {
 
       }
@@ -415,17 +415,17 @@ public final class GenericResponseProtobuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.gora.server.model.network.protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_descriptor;
+        return protobuf.GenericResponseProtobuf.internal_static_protobuf_GenericResponse_descriptor;
       }
 
       @java.lang.Override
-      public org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse getDefaultInstanceForType() {
-        return org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.getDefaultInstance();
+      public protobuf.GenericResponseProtobuf.GenericResponse getDefaultInstanceForType() {
+        return protobuf.GenericResponseProtobuf.GenericResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse build() {
-        org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse result = buildPartial();
+      public protobuf.GenericResponseProtobuf.GenericResponse build() {
+        protobuf.GenericResponseProtobuf.GenericResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -433,14 +433,14 @@ public final class GenericResponseProtobuf {
       }
 
       @java.lang.Override
-      public org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse buildPartial() {
-        org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse result = new org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse(this);
+      public protobuf.GenericResponseProtobuf.GenericResponse buildPartial() {
+        protobuf.GenericResponseProtobuf.GenericResponse result = new protobuf.GenericResponseProtobuf.GenericResponse(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse result) {
+      private void buildPartial0(protobuf.GenericResponseProtobuf.GenericResponse result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -488,16 +488,16 @@ public final class GenericResponseProtobuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse) {
-          return mergeFrom((org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse)other);
+        if (other instanceof protobuf.GenericResponseProtobuf.GenericResponse) {
+          return mergeFrom((protobuf.GenericResponseProtobuf.GenericResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse other) {
-        if (other == org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(protobuf.GenericResponseProtobuf.GenericResponse other) {
+        if (other == protobuf.GenericResponseProtobuf.GenericResponse.getDefaultInstance()) return this;
         if (other.hasStatus()) {
           setStatus(other.getStatus());
         }
@@ -738,12 +738,12 @@ public final class GenericResponseProtobuf {
     }
 
     // @@protoc_insertion_point(class_scope:protobuf.GenericResponse)
-    private static final org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse DEFAULT_INSTANCE;
+    private static final protobuf.GenericResponseProtobuf.GenericResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse();
+      DEFAULT_INSTANCE = new protobuf.GenericResponseProtobuf.GenericResponse();
     }
 
-    public static org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse getDefaultInstance() {
+    public static protobuf.GenericResponseProtobuf.GenericResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -779,7 +779,7 @@ public final class GenericResponseProtobuf {
     }
 
     @java.lang.Override
-    public org.gora.server.model.network.protobuf.GenericResponseProtobuf.GenericResponse getDefaultInstanceForType() {
+    public protobuf.GenericResponseProtobuf.GenericResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -801,8 +801,7 @@ public final class GenericResponseProtobuf {
     java.lang.String[] descriptorData = {
       "\n\036response/GenericResponse.proto\022\010protob" +
       "uf\"6\n\017GenericResponse\022\016\n\006status\030\001 \002(\r\022\023\n" +
-      "\013accessToken\030\002 \001(\tBA\n&org.gora.server.mo" +
-      "del.network.protobufB\027GenericResponsePro" +
+      "\013accessToken\030\002 \001(\tB\031B\027GenericResponsePro" +
       "tobuf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

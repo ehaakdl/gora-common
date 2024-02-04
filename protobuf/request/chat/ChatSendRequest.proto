@@ -1,6 +1,5 @@
 package protobuf;
 
-option java_package = "org.gora.server.model.network.protobuf";
 option java_outer_classname = "ChatSendRequestProtoBuf";
 
 message ChatSendRequest {

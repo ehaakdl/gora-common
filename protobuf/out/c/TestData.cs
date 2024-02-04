@@ -25,8 +25,7 @@ namespace Protobuf {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChdyZXNwb25zZS9UZXN0RGF0YS5wcm90bxIIcHJvdG9idWYiFwoIVGVzdERh",
-            "dGESCwoDbXNnGAEgASgMQjoKJm9yZy5nb3JhLnNlcnZlci5tb2RlbC5uZXR3",
-            "b3JrLnByb3RvYnVmQhBUZXN0RGF0YVByb3RvQnVm"));
+            "dGESCwoDbXNnGAEgASgMQhJCEFRlc3REYXRhUHJvdG9CdWY="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
