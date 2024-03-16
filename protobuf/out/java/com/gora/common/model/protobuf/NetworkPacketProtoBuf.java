@@ -2,7 +2,7 @@
 // source: NetworkPacket.proto
 
 // Protobuf Java Version: 3.25.0-rc2
-package com.gora.server.model.network.protobuf;
+package com.gora.common.model.protobuf;
 
 public final class NetworkPacketProtoBuf {
   private NetworkPacketProtoBuf() {}
@@ -16,7 +16,7 @@ public final class NetworkPacketProtoBuf {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface NetworkPacketOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.gora.server.model.network.protobuf.NetworkPacket)
+      // @@protoc_insertion_point(interface_extends:com.gora.common.model.protobuf.NetworkPacket)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -173,11 +173,11 @@ public final class NetworkPacketProtoBuf {
     int getSequence();
   }
   /**
-   * Protobuf type {@code com.gora.server.model.network.protobuf.NetworkPacket}
+   * Protobuf type {@code com.gora.common.model.protobuf.NetworkPacket}
    */
   public static final class NetworkPacket extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.gora.server.model.network.protobuf.NetworkPacket)
+      // @@protoc_insertion_point(message_implements:com.gora.common.model.protobuf.NetworkPacket)
       NetworkPacketOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use NetworkPacket.newBuilder() to construct.
@@ -199,15 +199,15 @@ public final class NetworkPacketProtoBuf {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_server_model_network_protobuf_NetworkPacket_descriptor;
+      return com.gora.common.model.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_common_model_protobuf_NetworkPacket_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_server_model_network_protobuf_NetworkPacket_fieldAccessorTable
+      return com.gora.common.model.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_common_model_protobuf_NetworkPacket_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.class, com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.Builder.class);
+              com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.class, com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.Builder.class);
     }
 
     private int bitField0_;
@@ -576,10 +576,10 @@ public final class NetworkPacketProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket)) {
+      if (!(obj instanceof com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket)) {
         return super.equals(obj);
       }
-      com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket other = (com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket) obj;
+      com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket other = (com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket) obj;
 
       if (hasData() != other.hasData()) return false;
       if (hasData()) {
@@ -660,44 +660,44 @@ public final class NetworkPacketProtoBuf {
       return hash;
     }
 
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(byte[] data)
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(java.io.InputStream input)
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -705,26 +705,26 @@ public final class NetworkPacketProtoBuf {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseDelimitedFrom(java.io.InputStream input)
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseDelimitedFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -737,7 +737,7 @@ public final class NetworkPacketProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket prototype) {
+    public static Builder newBuilder(com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -753,26 +753,26 @@ public final class NetworkPacketProtoBuf {
       return builder;
     }
     /**
-     * Protobuf type {@code com.gora.server.model.network.protobuf.NetworkPacket}
+     * Protobuf type {@code com.gora.common.model.protobuf.NetworkPacket}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.gora.server.model.network.protobuf.NetworkPacket)
-        com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacketOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.gora.common.model.protobuf.NetworkPacket)
+        com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacketOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_server_model_network_protobuf_NetworkPacket_descriptor;
+        return com.gora.common.model.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_common_model_protobuf_NetworkPacket_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_server_model_network_protobuf_NetworkPacket_fieldAccessorTable
+        return com.gora.common.model.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_common_model_protobuf_NetworkPacket_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.class, com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.Builder.class);
+                com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.class, com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.Builder.class);
       }
 
-      // Construct using com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.newBuilder()
+      // Construct using com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.newBuilder()
       private Builder() {
 
       }
@@ -799,17 +799,17 @@ public final class NetworkPacketProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_server_model_network_protobuf_NetworkPacket_descriptor;
+        return com.gora.common.model.protobuf.NetworkPacketProtoBuf.internal_static_com_gora_common_model_protobuf_NetworkPacket_descriptor;
       }
 
       @java.lang.Override
-      public com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket getDefaultInstanceForType() {
-        return com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.getDefaultInstance();
+      public com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket getDefaultInstanceForType() {
+        return com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket build() {
-        com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket result = buildPartial();
+      public com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket build() {
+        com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -817,14 +817,14 @@ public final class NetworkPacketProtoBuf {
       }
 
       @java.lang.Override
-      public com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket buildPartial() {
-        com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket result = new com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket(this);
+      public com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket buildPartial() {
+        com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket result = new com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket result) {
+      private void buildPartial0(com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -892,16 +892,16 @@ public final class NetworkPacketProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket) {
-          return mergeFrom((com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket)other);
+        if (other instanceof com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket) {
+          return mergeFrom((com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket other) {
-        if (other == com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket other) {
+        if (other == com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket.getDefaultInstance()) return this;
         if (other.hasData()) {
           setData(other.getData());
         }
@@ -1526,16 +1526,16 @@ public final class NetworkPacketProtoBuf {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.gora.server.model.network.protobuf.NetworkPacket)
+      // @@protoc_insertion_point(builder_scope:com.gora.common.model.protobuf.NetworkPacket)
     }
 
-    // @@protoc_insertion_point(class_scope:com.gora.server.model.network.protobuf.NetworkPacket)
-    private static final com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.gora.common.model.protobuf.NetworkPacket)
+    private static final com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket();
+      DEFAULT_INSTANCE = new com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket();
     }
 
-    public static com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket getDefaultInstance() {
+    public static com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1571,17 +1571,17 @@ public final class NetworkPacketProtoBuf {
     }
 
     @java.lang.Override
-    public com.gora.server.model.network.protobuf.NetworkPacketProtoBuf.NetworkPacket getDefaultInstanceForType() {
+    public com.gora.common.model.protobuf.NetworkPacketProtoBuf.NetworkPacket getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_gora_server_model_network_protobuf_NetworkPacket_descriptor;
+    internal_static_com_gora_common_model_protobuf_NetworkPacket_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_gora_server_model_network_protobuf_NetworkPacket_fieldAccessorTable;
+      internal_static_com_gora_common_model_protobuf_NetworkPacket_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1591,22 +1591,22 @@ public final class NetworkPacketProtoBuf {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023NetworkPacket.proto\022&com.gora.server.m" +
-      "odel.network.protobuf\"\212\001\n\rNetworkPacket\022" +
-      "\014\n\004data\030\001 \002(\014\022\014\n\004type\030\002 \002(\007\022\020\n\010dataSize\030" +
-      "\003 \002(\007\022\024\n\014udpChannelId\030\004 \002(\t\022\020\n\010identify\030" +
-      "\005 \002(\t\022\021\n\ttotalSize\030\006 \002(\007\022\020\n\010sequence\030\007 \002" +
-      "(\007B\027B\025NetworkPacketProtoBuf"
+      "\n\023NetworkPacket.proto\022\036com.gora.common.m" +
+      "odel.protobuf\"\212\001\n\rNetworkPacket\022\014\n\004data\030" +
+      "\001 \002(\014\022\014\n\004type\030\002 \002(\007\022\020\n\010dataSize\030\003 \002(\007\022\024\n" +
+      "\014udpChannelId\030\004 \002(\t\022\020\n\010identify\030\005 \002(\t\022\021\n" +
+      "\ttotalSize\030\006 \002(\007\022\020\n\010sequence\030\007 \002(\007B\027B\025Ne" +
+      "tworkPacketProtoBuf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_com_gora_server_model_network_protobuf_NetworkPacket_descriptor =
+    internal_static_com_gora_common_model_protobuf_NetworkPacket_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_com_gora_server_model_network_protobuf_NetworkPacket_fieldAccessorTable = new
+    internal_static_com_gora_common_model_protobuf_NetworkPacket_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_gora_server_model_network_protobuf_NetworkPacket_descriptor,
+        internal_static_com_gora_common_model_protobuf_NetworkPacket_descriptor,
         new java.lang.String[] { "Data", "Type", "DataSize", "UdpChannelId", "Identify", "TotalSize", "Sequence", });
   }
 

@@ -1,5 +1,5 @@
 // syntax = "proto3";
-package com.gora.server.model.network.protobuf;
+package com.gora.common.model.protobuf;
 
 option java_outer_classname = "TestDataProtoBuf";
 

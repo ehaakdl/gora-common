@@ -2,7 +2,7 @@
 // source: request/chat/ChatHistoryRequest.proto
 
 // Protobuf Java Version: 3.25.0-rc2
-package com.gora.server.model.network.protobuf;
+package com.gora.common.model.protobuf;
 
 public final class ChatHistoryRequestProtobuf {
   private ChatHistoryRequestProtobuf() {}
@@ -16,7 +16,7 @@ public final class ChatHistoryRequestProtobuf {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface ChatHistoryRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.gora.server.model.network.protobuf.ChatHistoryRequest)
+      // @@protoc_insertion_point(interface_extends:com.gora.common.model.protobuf.ChatHistoryRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -241,11 +241,11 @@ public final class ChatHistoryRequestProtobuf {
         getAccessTokenBytes();
   }
   /**
-   * Protobuf type {@code com.gora.server.model.network.protobuf.ChatHistoryRequest}
+   * Protobuf type {@code com.gora.common.model.protobuf.ChatHistoryRequest}
    */
   public static final class ChatHistoryRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.gora.server.model.network.protobuf.ChatHistoryRequest)
+      // @@protoc_insertion_point(message_implements:com.gora.common.model.protobuf.ChatHistoryRequest)
       ChatHistoryRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ChatHistoryRequest.newBuilder() to construct.
@@ -269,15 +269,15 @@ public final class ChatHistoryRequestProtobuf {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_descriptor;
+      return com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_fieldAccessorTable
+      return com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.class, com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.Builder.class);
+              com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.class, com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.Builder.class);
     }
 
     private int bitField0_;
@@ -801,10 +801,10 @@ public final class ChatHistoryRequestProtobuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest)) {
+      if (!(obj instanceof com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest)) {
         return super.equals(obj);
       }
-      com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest other = (com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest) obj;
+      com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest other = (com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest) obj;
 
       if (hasChatType() != other.hasChatType()) return false;
       if (hasChatType()) {
@@ -905,44 +905,44 @@ public final class ChatHistoryRequestProtobuf {
       return hash;
     }
 
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(byte[] data)
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(java.io.InputStream input)
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -950,26 +950,26 @@ public final class ChatHistoryRequestProtobuf {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseDelimitedFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -982,7 +982,7 @@ public final class ChatHistoryRequestProtobuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest prototype) {
+    public static Builder newBuilder(com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -998,26 +998,26 @@ public final class ChatHistoryRequestProtobuf {
       return builder;
     }
     /**
-     * Protobuf type {@code com.gora.server.model.network.protobuf.ChatHistoryRequest}
+     * Protobuf type {@code com.gora.common.model.protobuf.ChatHistoryRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.gora.server.model.network.protobuf.ChatHistoryRequest)
-        com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.gora.common.model.protobuf.ChatHistoryRequest)
+        com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_descriptor;
+        return com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_fieldAccessorTable
+        return com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.class, com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.Builder.class);
+                com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.class, com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.Builder.class);
       }
 
-      // Construct using com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.newBuilder()
+      // Construct using com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.newBuilder()
       private Builder() {
 
       }
@@ -1046,17 +1046,17 @@ public final class ChatHistoryRequestProtobuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_descriptor;
+        return com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_descriptor;
       }
 
       @java.lang.Override
-      public com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest getDefaultInstanceForType() {
-        return com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.getDefaultInstance();
+      public com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest getDefaultInstanceForType() {
+        return com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest build() {
-        com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest result = buildPartial();
+      public com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest build() {
+        com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1064,14 +1064,14 @@ public final class ChatHistoryRequestProtobuf {
       }
 
       @java.lang.Override
-      public com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest buildPartial() {
-        com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest result = new com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest(this);
+      public com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest buildPartial() {
+        com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest result = new com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest result) {
+      private void buildPartial0(com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -1147,16 +1147,16 @@ public final class ChatHistoryRequestProtobuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest) {
-          return mergeFrom((com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest)other);
+        if (other instanceof com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest) {
+          return mergeFrom((com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest other) {
-        if (other == com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest other) {
+        if (other == com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest.getDefaultInstance()) return this;
         if (other.hasChatType()) {
           chatType_ = other.chatType_;
           bitField0_ |= 0x00000001;
@@ -2050,16 +2050,16 @@ public final class ChatHistoryRequestProtobuf {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.gora.server.model.network.protobuf.ChatHistoryRequest)
+      // @@protoc_insertion_point(builder_scope:com.gora.common.model.protobuf.ChatHistoryRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:com.gora.server.model.network.protobuf.ChatHistoryRequest)
-    private static final com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.gora.common.model.protobuf.ChatHistoryRequest)
+    private static final com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest();
+      DEFAULT_INSTANCE = new com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest();
     }
 
-    public static com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest getDefaultInstance() {
+    public static com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2095,17 +2095,17 @@ public final class ChatHistoryRequestProtobuf {
     }
 
     @java.lang.Override
-    public com.gora.server.model.network.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest getDefaultInstanceForType() {
+    public com.gora.common.model.protobuf.ChatHistoryRequestProtobuf.ChatHistoryRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_descriptor;
+    internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_fieldAccessorTable;
+      internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2116,23 +2116,23 @@ public final class ChatHistoryRequestProtobuf {
   static {
     java.lang.String[] descriptorData = {
       "\n%request/chat/ChatHistoryRequest.proto\022" +
-      "&com.gora.server.model.network.protobuf\"" +
-      "\263\001\n\022ChatHistoryRequest\022\020\n\010chatType\030\001 \002(\t" +
-      "\022\021\n\tgroupType\030\002 \001(\t\022\021\n\tgroupCode\030\003 \001(\t\022\020" +
-      "\n\010userCode\030\004 \001(\t\022\017\n\007startAt\030\005 \001(\004\022\r\n\005end" +
-      "At\030\006 \001(\004\022\014\n\004page\030\007 \002(\r\022\020\n\010pageSize\030\010 \002(\r" +
-      "\022\023\n\013accessToken\030\t \002(\tB\034B\032ChatHistoryRequ" +
-      "estProtobuf"
+      "\036com.gora.common.model.protobuf\"\263\001\n\022Chat" +
+      "HistoryRequest\022\020\n\010chatType\030\001 \002(\t\022\021\n\tgrou" +
+      "pType\030\002 \001(\t\022\021\n\tgroupCode\030\003 \001(\t\022\020\n\010userCo" +
+      "de\030\004 \001(\t\022\017\n\007startAt\030\005 \001(\004\022\r\n\005endAt\030\006 \001(\004" +
+      "\022\014\n\004page\030\007 \002(\r\022\020\n\010pageSize\030\010 \002(\r\022\023\n\013acce" +
+      "ssToken\030\t \002(\tB\034B\032ChatHistoryRequestProto" +
+      "buf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_descriptor =
+    internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_fieldAccessorTable = new
+    internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_gora_server_model_network_protobuf_ChatHistoryRequest_descriptor,
+        internal_static_com_gora_common_model_protobuf_ChatHistoryRequest_descriptor,
         new java.lang.String[] { "ChatType", "GroupType", "GroupCode", "UserCode", "StartAt", "EndAt", "Page", "PageSize", "AccessToken", });
   }
 
