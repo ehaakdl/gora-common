@@ -7,29 +7,34 @@
 ```
 java, c# 독립적으로 직렬화 하기 위해서 도입됨
 ```
+
+#### 필독
+```
+모듈별로 패키지명이 다르기 때문에 패키지명을 다르게 구성하기 위해서 같은파일을
+패키지명만 다르게해서 관리 중
+```
+
 <details>
 <summary><h4>컴파일 방법</h4></summary>
 
 #### java 컴파일
 ```
 mkdir .\protobuf\out\java
-cd ./protobuf
-protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/request/chat/*.proto
-protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/request/*.proto
-protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/response/*.proto
-protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/response/chat/*.proto
-protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/*.proto
+protoc -I=protobuf/server --java_out=./protobuf/out/java ./protobuf/server/request/chat/*.proto
+protoc -I=protobuf/server --java_out=./protobuf/out/java ./protobuf/server/request/*.proto
+protoc -I=protobuf/server --java_out=./protobuf/out/java ./protobuf/server/response/*.proto
+protoc -I=protobuf/server --java_out=./protobuf/out/java ./protobuf/server/response/chat/*.proto
+protoc -I=protobuf/server --java_out=./protobuf/out/java ./protobuf/server/*.proto
 ```
 
 #### c# 컴파일
 ```
 mkdir .\protobuf\out\c
-cd ./protobuf
-protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/request/chat/*.proto
-protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/request/*.proto
-protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/response/*.proto
-protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/response/chat/*.proto
-protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/*.proto
+protoc -I=protobuf/server --csharp_out=./protobuf/out/c ./protobuf/server/request/chat/*.proto
+protoc -I=protobuf/server --csharp_out=./protobuf/out/c ./protobuf/server/request/*.proto
+protoc -I=protobuf/server --csharp_out=./protobuf/out/c ./protobuf/server/response/*.proto
+protoc -I=protobuf/server --csharp_out=./protobuf/out/c ./protobuf/server/response/chat/*.proto
+protoc -I=protobuf/server --csharp_out=./protobuf/out/c ./protobuf/server/*.proto
 ```
 
 #### 컴파일 결과물

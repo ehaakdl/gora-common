@@ -1,4 +1,4 @@
-package protobuf;
+package com.gora.server.model.network.protobuf;
 
 option java_outer_classname = "ChatHistoryResponseProtobuf";
 
