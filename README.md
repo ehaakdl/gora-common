@@ -13,6 +13,7 @@ java, c# 독립적으로 직렬화 하기 위해서 도입됨
 #### java 컴파일
 ```
 mkdir .\protobuf\out\java
+cd ./protobuf
 protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/request/chat/*.proto
 protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/request/*.proto
 protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/response/*.proto
@@ -23,6 +24,7 @@ protoc -I=protobuf --java_out=./protobuf/out/java ./protobuf/*.proto
 #### c# 컴파일
 ```
 mkdir .\protobuf\out\c
+cd ./protobuf
 protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/request/chat/*.proto
 protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/request/*.proto
 protoc -I=protobuf --csharp_out=./protobuf/out/c ./protobuf/response/*.proto
