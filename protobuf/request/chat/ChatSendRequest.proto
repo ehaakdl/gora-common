@@ -1,9 +1,11 @@
 package com.gora.common.model.protobuf;
+import 'ChatServiceType.proto';
+
 
 option java_outer_classname = "ChatSendRequestProtoBuf";
 
 message ChatSendRequest {
-  required string chatType = 1; // 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
+  required com.gora.common.model.protobuf.type.ChatServiceType chatType = 1; // 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
   optional string groupType = 2; // 어떤 그룹 유형으로 보내는지 나타낸다(미사용 - 나중에 구현 예정)
   optional string groupCode = 3; // 어떤 그룹으로 보내는지 나타낸다(미사용 - 나중에 구현 예정)
   optional string userCode = 4; // 어떤 유저에게 보낼지 지정한다.(1:1 채팅에서 사용, 미사용 - 나중에 구현 예정)

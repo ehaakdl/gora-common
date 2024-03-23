@@ -1,9 +1,10 @@
 package com.gora.common.model.protobuf;
+import 'ChatServiceType.proto';
 
 option java_outer_classname = "ChatHistoryResponseProtobuf";
 
 message MessageData {
-  required string chatType = 1; // 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
+  required com.gora.common.model.protobuf.type.ChatServiceType chatType = 1; // 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
   optional string groupType = 2; // 어떤 그룹 유형 인지 나타낸다(미사용 - 나중에 구현 예정)
   optional string groupCode = 3; // 어떤 그룹 인지 나타낸다(미사용 - 나중에 구현 예정)
   optional string senderEmail = 4; // 보낸 유저 이메일
@@ -14,10 +15,11 @@ message MessageData {
   required string message = 9; // 메시지 담는곳
 }
 
+
 message ChatHistoryResponse {
-  required uint32 page = 1; // 페이지 번호
+  required uint32 page = 1; // 요청한 현재 페이지 번호
   required uint32 pageSize = 2; // 한 페이지당 크기
-  required bytes data = 3; // 메시지 정보가 담기는곳
+  required MessageData data = 3; // 메시지 정보가 담기는곳
   required uint32 totalPage = 4; // 전체 페이지 개수
   optional string accessToken = 5; // 계정 인증 토큰(재발급될때 이 필드가 채워짐)
 }

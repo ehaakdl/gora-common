@@ -15,6 +15,135 @@ public final class NetworkPacketProtoBuf {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  /**
+   * Protobuf enum {@code com.gora.common.model.protobuf.NetworkServiceType}
+   */
+  public enum NetworkServiceType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <pre>
+     * test 용 echo 채팅
+     * </pre>
+     *
+     * <code>echo_chat = 0;</code>
+     */
+    echo_chat(0),
+    /**
+     * <pre>
+     * 채팅 
+     * </pre>
+     *
+     * <code>chat = 1;</code>
+     */
+    chat(1),
+    /**
+     * <pre>
+     * udp 초기화
+     * </pre>
+     *
+     * <code>udp_initial = 2;</code>
+     */
+    udp_initial(2),
+    ;
+
+    /**
+     * <pre>
+     * test 용 echo 채팅
+     * </pre>
+     *
+     * <code>echo_chat = 0;</code>
+     */
+    public static final int echo_chat_VALUE = 0;
+    /**
+     * <pre>
+     * 채팅 
+     * </pre>
+     *
+     * <code>chat = 1;</code>
+     */
+    public static final int chat_VALUE = 1;
+    /**
+     * <pre>
+     * udp 초기화
+     * </pre>
+     *
+     * <code>udp_initial = 2;</code>
+     */
+    public static final int udp_initial_VALUE = 2;
+
+
+    public final int getNumber() {
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static NetworkServiceType valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static NetworkServiceType forNumber(int value) {
+      switch (value) {
+        case 0: return echo_chat;
+        case 1: return chat;
+        case 2: return udp_initial;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<NetworkServiceType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        NetworkServiceType> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<NetworkServiceType>() {
+            public NetworkServiceType findValueByNumber(int number) {
+              return NetworkServiceType.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return com.gora.common.model.protobuf.NetworkPacketProtoBuf.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final NetworkServiceType[] VALUES = values();
+
+    public static NetworkServiceType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private NetworkServiceType(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:com.gora.common.model.protobuf.NetworkServiceType)
+  }
+
   public interface NetworkPacketOrBuilder extends
       // @@protoc_insertion_point(interface_extends:com.gora.common.model.protobuf.NetworkPacket)
       com.google.protobuf.MessageOrBuilder {
@@ -1595,8 +1724,10 @@ public final class NetworkPacketProtoBuf {
       "odel.protobuf\"\212\001\n\rNetworkPacket\022\014\n\004data\030" +
       "\001 \002(\014\022\014\n\004type\030\002 \002(\007\022\020\n\010dataSize\030\003 \002(\007\022\024\n" +
       "\014udpChannelId\030\004 \002(\t\022\020\n\010identify\030\005 \002(\t\022\021\n" +
-      "\ttotalSize\030\006 \002(\007\022\020\n\010sequence\030\007 \002(\007B\027B\025Ne" +
-      "tworkPacketProtoBuf"
+      "\ttotalSize\030\006 \002(\007\022\020\n\010sequence\030\007 \002(\007*>\n\022Ne" +
+      "tworkServiceType\022\r\n\techo_chat\020\000\022\010\n\004chat\020" +
+      "\001\022\017\n\013udp_initial\020\002B\027B\025NetworkPacketProto" +
+      "Buf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

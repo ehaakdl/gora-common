@@ -1,0 +1,9 @@
+package com.gora.common.model.protobuf.type;
+option java_outer_classname = "ChatServiceTypeProtobuf";
+
+enum ChatServiceType
+{
+    all = 0; // 전체 채팅
+    group = 1; // 그룹 채팅
+    direct = 2; // 1:1 채팅
+}

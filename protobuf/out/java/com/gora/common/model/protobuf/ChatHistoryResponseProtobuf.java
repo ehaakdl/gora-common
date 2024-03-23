@@ -24,7 +24,7 @@ public final class ChatHistoryResponseProtobuf {
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return Whether the chatType field is set.
      */
     boolean hasChatType();
@@ -33,20 +33,10 @@ public final class ChatHistoryResponseProtobuf {
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return The chatType.
      */
-    java.lang.String getChatType();
-    /**
-     * <pre>
-     * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-     * </pre>
-     *
-     * <code>required string chatType = 1;</code>
-     * @return The bytes for chatType.
-     */
-    com.google.protobuf.ByteString
-        getChatTypeBytes();
+    com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType getChatType();
 
     /**
      * <pre>
@@ -283,7 +273,7 @@ public final class ChatHistoryResponseProtobuf {
       super(builder);
     }
     private MessageData() {
-      chatType_ = "";
+      chatType_ = 0;
       groupType_ = "";
       groupCode_ = "";
       senderEmail_ = "";
@@ -315,18 +305,16 @@ public final class ChatHistoryResponseProtobuf {
 
     private int bitField0_;
     public static final int CHATTYPE_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object chatType_ = "";
+    private int chatType_ = 0;
     /**
      * <pre>
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return Whether the chatType field is set.
      */
-    @java.lang.Override
-    public boolean hasChatType() {
+    @java.lang.Override public boolean hasChatType() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
@@ -334,45 +322,12 @@ public final class ChatHistoryResponseProtobuf {
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return The chatType.
      */
-    @java.lang.Override
-    public java.lang.String getChatType() {
-      java.lang.Object ref = chatType_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          chatType_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-     * </pre>
-     *
-     * <code>required string chatType = 1;</code>
-     * @return The bytes for chatType.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getChatTypeBytes() {
-      java.lang.Object ref = chatType_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        chatType_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    @java.lang.Override public com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType getChatType() {
+      com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType result = com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.forNumber(chatType_);
+      return result == null ? com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.all : result;
     }
 
     public static final int GROUPTYPE_FIELD_NUMBER = 2;
@@ -856,7 +811,7 @@ public final class ChatHistoryResponseProtobuf {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, chatType_);
+        output.writeEnum(1, chatType_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, groupType_);
@@ -892,7 +847,8 @@ public final class ChatHistoryResponseProtobuf {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, chatType_);
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, chatType_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, groupType_);
@@ -936,8 +892,7 @@ public final class ChatHistoryResponseProtobuf {
 
       if (hasChatType() != other.hasChatType()) return false;
       if (hasChatType()) {
-        if (!getChatType()
-            .equals(other.getChatType())) return false;
+        if (chatType_ != other.chatType_) return false;
       }
       if (hasGroupType() != other.hasGroupType()) return false;
       if (hasGroupType()) {
@@ -992,7 +947,7 @@ public final class ChatHistoryResponseProtobuf {
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasChatType()) {
         hash = (37 * hash) + CHATTYPE_FIELD_NUMBER;
-        hash = (53 * hash) + getChatType().hashCode();
+        hash = (53 * hash) + chatType_;
       }
       if (hasGroupType()) {
         hash = (37 * hash) + GROUPTYPE_FIELD_NUMBER;
@@ -1158,7 +1113,7 @@ public final class ChatHistoryResponseProtobuf {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        chatType_ = "";
+        chatType_ = 0;
         groupType_ = "";
         groupCode_ = "";
         senderEmail_ = "";
@@ -1285,9 +1240,7 @@ public final class ChatHistoryResponseProtobuf {
       public Builder mergeFrom(com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData other) {
         if (other == com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.getDefaultInstance()) return this;
         if (other.hasChatType()) {
-          chatType_ = other.chatType_;
-          bitField0_ |= 0x00000001;
-          onChanged();
+          setChatType(other.getChatType());
         }
         if (other.hasGroupType()) {
           groupType_ = other.groupType_;
@@ -1362,11 +1315,18 @@ public final class ChatHistoryResponseProtobuf {
               case 0:
                 done = true;
                 break;
-              case 10: {
-                chatType_ = input.readBytes();
-                bitField0_ |= 0x00000001;
+              case 8: {
+                int tmpRaw = input.readEnum();
+                com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType tmpValue =
+                    com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.forNumber(tmpRaw);
+                if (tmpValue == null) {
+                  mergeUnknownVarintField(1, tmpRaw);
+                } else {
+                  chatType_ = tmpRaw;
+                  bitField0_ |= 0x00000001;
+                }
                 break;
-              } // case 10
+              } // case 8
               case 18: {
                 groupType_ = input.readBytes();
                 bitField0_ |= 0x00000002;
@@ -1424,16 +1384,16 @@ public final class ChatHistoryResponseProtobuf {
       }
       private int bitField0_;
 
-      private java.lang.Object chatType_ = "";
+      private int chatType_ = 0;
       /**
        * <pre>
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @return Whether the chatType field is set.
        */
-      public boolean hasChatType() {
+      @java.lang.Override public boolean hasChatType() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
@@ -1441,58 +1401,29 @@ public final class ChatHistoryResponseProtobuf {
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @return The chatType.
        */
-      public java.lang.String getChatType() {
-        java.lang.Object ref = chatType_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            chatType_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType getChatType() {
+        com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType result = com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.forNumber(chatType_);
+        return result == null ? com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.all : result;
       }
       /**
        * <pre>
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
-       * @return The bytes for chatType.
-       */
-      public com.google.protobuf.ByteString
-          getChatTypeBytes() {
-        java.lang.Object ref = chatType_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          chatType_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-       * </pre>
-       *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @param value The chatType to set.
        * @return This builder for chaining.
        */
-      public Builder setChatType(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        chatType_ = value;
+      public Builder setChatType(com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         bitField0_ |= 0x00000001;
+        chatType_ = value.getNumber();
         onChanged();
         return this;
       }
@@ -1501,29 +1432,12 @@ public final class ChatHistoryResponseProtobuf {
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearChatType() {
-        chatType_ = getDefaultInstance().getChatType();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-       * </pre>
-       *
-       * <code>required string chatType = 1;</code>
-       * @param value The bytes for chatType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChatTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        chatType_ = value;
-        bitField0_ |= 0x00000001;
+        chatType_ = 0;
         onChanged();
         return this;
       }
@@ -2381,7 +2295,7 @@ public final class ChatHistoryResponseProtobuf {
 
     /**
      * <pre>
-     * 페이지 번호
+     * 요청한 현재 페이지 번호
      * </pre>
      *
      * <code>required uint32 page = 1;</code>
@@ -2390,7 +2304,7 @@ public final class ChatHistoryResponseProtobuf {
     boolean hasPage();
     /**
      * <pre>
-     * 페이지 번호
+     * 요청한 현재 페이지 번호
      * </pre>
      *
      * <code>required uint32 page = 1;</code>
@@ -2422,7 +2336,7 @@ public final class ChatHistoryResponseProtobuf {
      * 메시지 정보가 담기는곳
      * </pre>
      *
-     * <code>required bytes data = 3;</code>
+     * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
      * @return Whether the data field is set.
      */
     boolean hasData();
@@ -2431,10 +2345,18 @@ public final class ChatHistoryResponseProtobuf {
      * 메시지 정보가 담기는곳
      * </pre>
      *
-     * <code>required bytes data = 3;</code>
+     * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
      * @return The data.
      */
-    com.google.protobuf.ByteString getData();
+    com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData getData();
+    /**
+     * <pre>
+     * 메시지 정보가 담기는곳
+     * </pre>
+     *
+     * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+     */
+    com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageDataOrBuilder getDataOrBuilder();
 
     /**
      * <pre>
@@ -2497,7 +2419,6 @@ public final class ChatHistoryResponseProtobuf {
       super(builder);
     }
     private ChatHistoryResponse() {
-      data_ = com.google.protobuf.ByteString.EMPTY;
       accessToken_ = "";
     }
 
@@ -2526,7 +2447,7 @@ public final class ChatHistoryResponseProtobuf {
     private int page_ = 0;
     /**
      * <pre>
-     * 페이지 번호
+     * 요청한 현재 페이지 번호
      * </pre>
      *
      * <code>required uint32 page = 1;</code>
@@ -2538,7 +2459,7 @@ public final class ChatHistoryResponseProtobuf {
     }
     /**
      * <pre>
-     * 페이지 번호
+     * 요청한 현재 페이지 번호
      * </pre>
      *
      * <code>required uint32 page = 1;</code>
@@ -2577,13 +2498,13 @@ public final class ChatHistoryResponseProtobuf {
     }
 
     public static final int DATA_FIELD_NUMBER = 3;
-    private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+    private com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData data_;
     /**
      * <pre>
      * 메시지 정보가 담기는곳
      * </pre>
      *
-     * <code>required bytes data = 3;</code>
+     * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
      * @return Whether the data field is set.
      */
     @java.lang.Override
@@ -2595,12 +2516,23 @@ public final class ChatHistoryResponseProtobuf {
      * 메시지 정보가 담기는곳
      * </pre>
      *
-     * <code>required bytes data = 3;</code>
+     * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
      * @return The data.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString getData() {
-      return data_;
+    public com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData getData() {
+      return data_ == null ? com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.getDefaultInstance() : data_;
+    }
+    /**
+     * <pre>
+     * 메시지 정보가 담기는곳
+     * </pre>
+     *
+     * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+     */
+    @java.lang.Override
+    public com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageDataOrBuilder getDataOrBuilder() {
+      return data_ == null ? com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.getDefaultInstance() : data_;
     }
 
     public static final int TOTALPAGE_FIELD_NUMBER = 4;
@@ -2714,6 +2646,10 @@ public final class ChatHistoryResponseProtobuf {
         memoizedIsInitialized = 0;
         return false;
       }
+      if (!getData().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -2728,7 +2664,7 @@ public final class ChatHistoryResponseProtobuf {
         output.writeUInt32(2, pageSize_);
       }
       if (((bitField0_ & 0x00000004) != 0)) {
-        output.writeBytes(3, data_);
+        output.writeMessage(3, getData());
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         output.writeUInt32(4, totalPage_);
@@ -2755,7 +2691,7 @@ public final class ChatHistoryResponseProtobuf {
       }
       if (((bitField0_ & 0x00000004) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, data_);
+          .computeMessageSize(3, getData());
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2954,13 +2890,19 @@ public final class ChatHistoryResponseProtobuf {
 
       // Construct using com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.ChatHistoryResponse.newBuilder()
       private Builder() {
-
+        maybeForceBuilderInitialization();
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getDataFieldBuilder();
+        }
       }
       @java.lang.Override
       public Builder clear() {
@@ -2968,7 +2910,11 @@ public final class ChatHistoryResponseProtobuf {
         bitField0_ = 0;
         page_ = 0;
         pageSize_ = 0;
-        data_ = com.google.protobuf.ByteString.EMPTY;
+        data_ = null;
+        if (dataBuilder_ != null) {
+          dataBuilder_.dispose();
+          dataBuilder_ = null;
+        }
         totalPage_ = 0;
         accessToken_ = "";
         return this;
@@ -3014,7 +2960,9 @@ public final class ChatHistoryResponseProtobuf {
           to_bitField0_ |= 0x00000002;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.data_ = data_;
+          result.data_ = dataBuilder_ == null
+              ? data_
+              : dataBuilder_.build();
           to_bitField0_ |= 0x00000004;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
@@ -3079,7 +3027,7 @@ public final class ChatHistoryResponseProtobuf {
           setPageSize(other.getPageSize());
         }
         if (other.hasData()) {
-          setData(other.getData());
+          mergeData(other.getData());
         }
         if (other.hasTotalPage()) {
           setTotalPage(other.getTotalPage());
@@ -3106,6 +3054,9 @@ public final class ChatHistoryResponseProtobuf {
           return false;
         }
         if (!hasTotalPage()) {
+          return false;
+        }
+        if (!getData().isInitialized()) {
           return false;
         }
         return true;
@@ -3138,7 +3089,9 @@ public final class ChatHistoryResponseProtobuf {
                 break;
               } // case 16
               case 26: {
-                data_ = input.readBytes();
+                input.readMessage(
+                    getDataFieldBuilder().getBuilder(),
+                    extensionRegistry);
                 bitField0_ |= 0x00000004;
                 break;
               } // case 26
@@ -3172,7 +3125,7 @@ public final class ChatHistoryResponseProtobuf {
       private int page_ ;
       /**
        * <pre>
-       * 페이지 번호
+       * 요청한 현재 페이지 번호
        * </pre>
        *
        * <code>required uint32 page = 1;</code>
@@ -3184,7 +3137,7 @@ public final class ChatHistoryResponseProtobuf {
       }
       /**
        * <pre>
-       * 페이지 번호
+       * 요청한 현재 페이지 번호
        * </pre>
        *
        * <code>required uint32 page = 1;</code>
@@ -3196,7 +3149,7 @@ public final class ChatHistoryResponseProtobuf {
       }
       /**
        * <pre>
-       * 페이지 번호
+       * 요청한 현재 페이지 번호
        * </pre>
        *
        * <code>required uint32 page = 1;</code>
@@ -3212,7 +3165,7 @@ public final class ChatHistoryResponseProtobuf {
       }
       /**
        * <pre>
-       * 페이지 번호
+       * 요청한 현재 페이지 번호
        * </pre>
        *
        * <code>required uint32 page = 1;</code>
@@ -3281,16 +3234,17 @@ public final class ChatHistoryResponseProtobuf {
         return this;
       }
 
-      private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+      private com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData data_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData, com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.Builder, com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageDataOrBuilder> dataBuilder_;
       /**
        * <pre>
        * 메시지 정보가 담기는곳
        * </pre>
        *
-       * <code>required bytes data = 3;</code>
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
        * @return Whether the data field is set.
        */
-      @java.lang.Override
       public boolean hasData() {
         return ((bitField0_ & 0x00000004) != 0);
       }
@@ -3299,25 +3253,32 @@ public final class ChatHistoryResponseProtobuf {
        * 메시지 정보가 담기는곳
        * </pre>
        *
-       * <code>required bytes data = 3;</code>
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
        * @return The data.
        */
-      @java.lang.Override
-      public com.google.protobuf.ByteString getData() {
-        return data_;
+      public com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData getData() {
+        if (dataBuilder_ == null) {
+          return data_ == null ? com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.getDefaultInstance() : data_;
+        } else {
+          return dataBuilder_.getMessage();
+        }
       }
       /**
        * <pre>
        * 메시지 정보가 담기는곳
        * </pre>
        *
-       * <code>required bytes data = 3;</code>
-       * @param value The data to set.
-       * @return This builder for chaining.
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
        */
-      public Builder setData(com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        data_ = value;
+      public Builder setData(com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData value) {
+        if (dataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          data_ = value;
+        } else {
+          dataBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
@@ -3327,14 +3288,107 @@ public final class ChatHistoryResponseProtobuf {
        * 메시지 정보가 담기는곳
        * </pre>
        *
-       * <code>required bytes data = 3;</code>
-       * @return This builder for chaining.
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+       */
+      public Builder setData(
+          com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.Builder builderForValue) {
+        if (dataBuilder_ == null) {
+          data_ = builderForValue.build();
+        } else {
+          dataBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 메시지 정보가 담기는곳
+       * </pre>
+       *
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+       */
+      public Builder mergeData(com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData value) {
+        if (dataBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0) &&
+            data_ != null &&
+            data_ != com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.getDefaultInstance()) {
+            getDataBuilder().mergeFrom(value);
+          } else {
+            data_ = value;
+          }
+        } else {
+          dataBuilder_.mergeFrom(value);
+        }
+        if (data_ != null) {
+          bitField0_ |= 0x00000004;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 메시지 정보가 담기는곳
+       * </pre>
+       *
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
        */
       public Builder clearData() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        data_ = getDefaultInstance().getData();
+        data_ = null;
+        if (dataBuilder_ != null) {
+          dataBuilder_.dispose();
+          dataBuilder_ = null;
+        }
         onChanged();
         return this;
+      }
+      /**
+       * <pre>
+       * 메시지 정보가 담기는곳
+       * </pre>
+       *
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+       */
+      public com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.Builder getDataBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getDataFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * 메시지 정보가 담기는곳
+       * </pre>
+       *
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+       */
+      public com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageDataOrBuilder getDataOrBuilder() {
+        if (dataBuilder_ != null) {
+          return dataBuilder_.getMessageOrBuilder();
+        } else {
+          return data_ == null ?
+              com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.getDefaultInstance() : data_;
+        }
+      }
+      /**
+       * <pre>
+       * 메시지 정보가 담기는곳
+       * </pre>
+       *
+       * <code>required .com.gora.common.model.protobuf.MessageData data = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData, com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.Builder, com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageDataOrBuilder> 
+          getDataFieldBuilder() {
+        if (dataBuilder_ == null) {
+          dataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData, com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageData.Builder, com.gora.common.model.protobuf.ChatHistoryResponseProtobuf.MessageDataOrBuilder>(
+                  getData(),
+                  getParentForChildren(),
+                  isClean());
+          data_ = null;
+        }
+        return dataBuilder_;
       }
 
       private int totalPage_ ;
@@ -3580,20 +3634,24 @@ public final class ChatHistoryResponseProtobuf {
   static {
     java.lang.String[] descriptorData = {
       "\n\'response/chat/ChatHistoryResponse.prot" +
-      "o\022\036com.gora.common.model.protobuf\"\302\001\n\013Me" +
-      "ssageData\022\020\n\010chatType\030\001 \002(\t\022\021\n\tgroupType" +
-      "\030\002 \001(\t\022\021\n\tgroupCode\030\003 \001(\t\022\023\n\013senderEmail" +
-      "\030\004 \001(\t\022\026\n\016senderUserCode\030\005 \001(\t\022\024\n\014receiv" +
-      "eEmail\030\006 \001(\t\022\027\n\017receiveUserCode\030\007 \001(\t\022\016\n" +
-      "\006sentAt\030\010 \002(\004\022\017\n\007message\030\t \002(\t\"k\n\023ChatHi" +
-      "storyResponse\022\014\n\004page\030\001 \002(\r\022\020\n\010pageSize\030" +
-      "\002 \002(\r\022\014\n\004data\030\003 \002(\014\022\021\n\ttotalPage\030\004 \002(\r\022\023" +
-      "\n\013accessToken\030\005 \001(\tB\035B\033ChatHistoryRespon" +
-      "seProtobuf"
+      "o\022\036com.gora.common.model.protobuf\032\025ChatS" +
+      "erviceType.proto\"\370\001\n\013MessageData\022F\n\010chat" +
+      "Type\030\001 \002(\01624.com.gora.common.model.proto" +
+      "buf.type.ChatServiceType\022\021\n\tgroupType\030\002 " +
+      "\001(\t\022\021\n\tgroupCode\030\003 \001(\t\022\023\n\013senderEmail\030\004 " +
+      "\001(\t\022\026\n\016senderUserCode\030\005 \001(\t\022\024\n\014receiveEm" +
+      "ail\030\006 \001(\t\022\027\n\017receiveUserCode\030\007 \001(\t\022\016\n\006se" +
+      "ntAt\030\010 \002(\004\022\017\n\007message\030\t \002(\t\"\230\001\n\023ChatHist" +
+      "oryResponse\022\014\n\004page\030\001 \002(\r\022\020\n\010pageSize\030\002 " +
+      "\002(\r\0229\n\004data\030\003 \002(\0132+.com.gora.common.mode" +
+      "l.protobuf.MessageData\022\021\n\ttotalPage\030\004 \002(" +
+      "\r\022\023\n\013accessToken\030\005 \001(\tB\035B\033ChatHistoryRes" +
+      "ponseProtobuf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.getDescriptor(),
         });
     internal_static_com_gora_common_model_protobuf_MessageData_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -3607,6 +3665,7 @@ public final class ChatHistoryResponseProtobuf {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_gora_common_model_protobuf_ChatHistoryResponse_descriptor,
         new java.lang.String[] { "Page", "PageSize", "Data", "TotalPage", "AccessToken", });
+    com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

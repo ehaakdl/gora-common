@@ -24,7 +24,7 @@ public final class ChatSendRequestProtoBuf {
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return Whether the chatType field is set.
      */
     boolean hasChatType();
@@ -33,20 +33,10 @@ public final class ChatSendRequestProtoBuf {
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return The chatType.
      */
-    java.lang.String getChatType();
-    /**
-     * <pre>
-     * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-     * </pre>
-     *
-     * <code>required string chatType = 1;</code>
-     * @return The bytes for chatType.
-     */
-    com.google.protobuf.ByteString
-        getChatTypeBytes();
+    com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType getChatType();
 
     /**
      * <pre>
@@ -206,7 +196,7 @@ public final class ChatSendRequestProtoBuf {
       super(builder);
     }
     private ChatSendRequest() {
-      chatType_ = "";
+      chatType_ = 0;
       groupType_ = "";
       groupCode_ = "";
       userCode_ = "";
@@ -236,18 +226,16 @@ public final class ChatSendRequestProtoBuf {
 
     private int bitField0_;
     public static final int CHATTYPE_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object chatType_ = "";
+    private int chatType_ = 0;
     /**
      * <pre>
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return Whether the chatType field is set.
      */
-    @java.lang.Override
-    public boolean hasChatType() {
+    @java.lang.Override public boolean hasChatType() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
@@ -255,45 +243,12 @@ public final class ChatSendRequestProtoBuf {
      * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
      * </pre>
      *
-     * <code>required string chatType = 1;</code>
+     * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
      * @return The chatType.
      */
-    @java.lang.Override
-    public java.lang.String getChatType() {
-      java.lang.Object ref = chatType_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          chatType_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-     * </pre>
-     *
-     * <code>required string chatType = 1;</code>
-     * @return The bytes for chatType.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getChatTypeBytes() {
-      java.lang.Object ref = chatType_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        chatType_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    @java.lang.Override public com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType getChatType() {
+      com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType result = com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.forNumber(chatType_);
+      return result == null ? com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.all : result;
     }
 
     public static final int GROUPTYPE_FIELD_NUMBER = 2;
@@ -628,7 +583,7 @@ public final class ChatSendRequestProtoBuf {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, chatType_);
+        output.writeEnum(1, chatType_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, groupType_);
@@ -655,7 +610,8 @@ public final class ChatSendRequestProtoBuf {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, chatType_);
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, chatType_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, groupType_);
@@ -689,8 +645,7 @@ public final class ChatSendRequestProtoBuf {
 
       if (hasChatType() != other.hasChatType()) return false;
       if (hasChatType()) {
-        if (!getChatType()
-            .equals(other.getChatType())) return false;
+        if (chatType_ != other.chatType_) return false;
       }
       if (hasGroupType() != other.hasGroupType()) return false;
       if (hasGroupType()) {
@@ -730,7 +685,7 @@ public final class ChatSendRequestProtoBuf {
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasChatType()) {
         hash = (37 * hash) + CHATTYPE_FIELD_NUMBER;
-        hash = (53 * hash) + getChatType().hashCode();
+        hash = (53 * hash) + chatType_;
       }
       if (hasGroupType()) {
         hash = (37 * hash) + GROUPTYPE_FIELD_NUMBER;
@@ -883,7 +838,7 @@ public final class ChatSendRequestProtoBuf {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        chatType_ = "";
+        chatType_ = 0;
         groupType_ = "";
         groupCode_ = "";
         userCode_ = "";
@@ -995,9 +950,7 @@ public final class ChatSendRequestProtoBuf {
       public Builder mergeFrom(com.gora.common.model.protobuf.ChatSendRequestProtoBuf.ChatSendRequest other) {
         if (other == com.gora.common.model.protobuf.ChatSendRequestProtoBuf.ChatSendRequest.getDefaultInstance()) return this;
         if (other.hasChatType()) {
-          chatType_ = other.chatType_;
-          bitField0_ |= 0x00000001;
-          onChanged();
+          setChatType(other.getChatType());
         }
         if (other.hasGroupType()) {
           groupType_ = other.groupType_;
@@ -1059,11 +1012,18 @@ public final class ChatSendRequestProtoBuf {
               case 0:
                 done = true;
                 break;
-              case 10: {
-                chatType_ = input.readBytes();
-                bitField0_ |= 0x00000001;
+              case 8: {
+                int tmpRaw = input.readEnum();
+                com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType tmpValue =
+                    com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.forNumber(tmpRaw);
+                if (tmpValue == null) {
+                  mergeUnknownVarintField(1, tmpRaw);
+                } else {
+                  chatType_ = tmpRaw;
+                  bitField0_ |= 0x00000001;
+                }
                 break;
-              } // case 10
+              } // case 8
               case 18: {
                 groupType_ = input.readBytes();
                 bitField0_ |= 0x00000002;
@@ -1106,16 +1066,16 @@ public final class ChatSendRequestProtoBuf {
       }
       private int bitField0_;
 
-      private java.lang.Object chatType_ = "";
+      private int chatType_ = 0;
       /**
        * <pre>
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @return Whether the chatType field is set.
        */
-      public boolean hasChatType() {
+      @java.lang.Override public boolean hasChatType() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
@@ -1123,58 +1083,29 @@ public final class ChatSendRequestProtoBuf {
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @return The chatType.
        */
-      public java.lang.String getChatType() {
-        java.lang.Object ref = chatType_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            chatType_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType getChatType() {
+        com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType result = com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.forNumber(chatType_);
+        return result == null ? com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType.all : result;
       }
       /**
        * <pre>
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
-       * @return The bytes for chatType.
-       */
-      public com.google.protobuf.ByteString
-          getChatTypeBytes() {
-        java.lang.Object ref = chatType_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          chatType_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-       * </pre>
-       *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @param value The chatType to set.
        * @return This builder for chaining.
        */
-      public Builder setChatType(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        chatType_ = value;
+      public Builder setChatType(com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.ChatServiceType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         bitField0_ |= 0x00000001;
+        chatType_ = value.getNumber();
         onChanged();
         return this;
       }
@@ -1183,29 +1114,12 @@ public final class ChatSendRequestProtoBuf {
        * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
        * </pre>
        *
-       * <code>required string chatType = 1;</code>
+       * <code>required .com.gora.common.model.protobuf.type.ChatServiceType chatType = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearChatType() {
-        chatType_ = getDefaultInstance().getChatType();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 채팅 유형(1:1, 그룹, 전체(1:1, 그룹))
-       * </pre>
-       *
-       * <code>required string chatType = 1;</code>
-       * @param value The bytes for chatType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChatTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        chatType_ = value;
-        bitField0_ |= 0x00000001;
+        chatType_ = 0;
         onChanged();
         return this;
       }
@@ -1808,15 +1722,18 @@ public final class ChatSendRequestProtoBuf {
   static {
     java.lang.String[] descriptorData = {
       "\n\"request/chat/ChatSendRequest.proto\022\036co" +
-      "m.gora.common.model.protobuf\"\201\001\n\017ChatSen" +
-      "dRequest\022\020\n\010chatType\030\001 \002(\t\022\021\n\tgroupType\030" +
-      "\002 \001(\t\022\021\n\tgroupCode\030\003 \001(\t\022\020\n\010userCode\030\004 \001" +
-      "(\t\022\017\n\007message\030\005 \002(\t\022\023\n\013accessToken\030\006 \002(\t" +
-      "B\031B\027ChatSendRequestProtoBuf"
+      "m.gora.common.model.protobuf\032\025ChatServic" +
+      "eType.proto\"\267\001\n\017ChatSendRequest\022F\n\010chatT" +
+      "ype\030\001 \002(\01624.com.gora.common.model.protob" +
+      "uf.type.ChatServiceType\022\021\n\tgroupType\030\002 \001" +
+      "(\t\022\021\n\tgroupCode\030\003 \001(\t\022\020\n\010userCode\030\004 \001(\t\022" +
+      "\017\n\007message\030\005 \002(\t\022\023\n\013accessToken\030\006 \002(\tB\031B" +
+      "\027ChatSendRequestProtoBuf"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.getDescriptor(),
         });
     internal_static_com_gora_common_model_protobuf_ChatSendRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1824,6 +1741,7 @@ public final class ChatSendRequestProtoBuf {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_gora_common_model_protobuf_ChatSendRequest_descriptor,
         new java.lang.String[] { "ChatType", "GroupType", "GroupCode", "UserCode", "Message", "AccessToken", });
+    com.gora.common.model.protobuf.type.ChatServiceTypeProtobuf.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

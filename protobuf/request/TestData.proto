@@ -1,8 +1,0 @@
-// syntax = "proto3";
-package com.gora.common.model.protobuf;
-
-option java_outer_classname = "TestDataProtoBuf";
-
-message TestData {
-  optional bytes msg = 1;
-}

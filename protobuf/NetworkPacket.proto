@@ -1,6 +1,12 @@
 package com.gora.common.model.protobuf;
-
 option java_outer_classname = "NetworkPacketProtoBuf";
+
+enum NetworkServiceType
+{
+    echo_chat = 0; // test 용 echo 채팅
+    chat = 1; // 채팅 
+    udp_initial = 2; // udp 초기화
+}
 
 message NetworkPacket {
   required bytes data = 1; // 데이터가 담김
